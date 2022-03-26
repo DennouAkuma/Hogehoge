@@ -29,8 +29,8 @@
                         chas_second,
                         chas_m_second){
 
-        var chas_str = chas_year + "-" +
-                        chas_mon + "-" +
+        var chas_str = chas_year + "/" +
+                        chas_mon + "/" +
                         chas_day + " " +
                         chas_horse + ":" +
                         chas_minutes + ":" +
@@ -43,7 +43,7 @@
         
         setInterval(function(){
             var now_time = new Date()
-            var set_time = new Date('2022-05-11 00:00:00')
+            var set_time = new Date('2022/05/11 00:00:00')
 
             var chas_data = set_time.getTime() - now_time.getTime()
 
