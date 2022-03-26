@@ -3,10 +3,10 @@
     var set_year = 2022;
     var set_mon = 5;
     var set_day = 11;
-    var set_horse = 0;
-    var set_minutes = 0;
-    var set_second = 0;
-    var set_m_second = 0;
+    var set_horse = 00;
+    var set_minutes = 00;
+    var set_second = 00;
+    var set_m_second = 000;
 
     load_position()
     load_time(set_year,
@@ -43,7 +43,7 @@
         
         setInterval(function(){
             var now_time = new Date()
-            var set_time = new Date(chas_str)
+            var set_time = new Date('2022-05-11 00:00:00')
 
             var chas_data = set_time.getTime() - now_time.getTime()
 
