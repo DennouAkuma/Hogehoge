@@ -66,6 +66,7 @@
 
             var day_str = Math.floor(diffHour / 24).toString();
             var horse_str = Math.floor(diffHour - (day_str * 24));
+            var minutes_str = Math.floor(diffMinute);
             var get_volume = $("#volume_ra").val();
             //console.log(get_volume/100);
 
@@ -73,10 +74,12 @@
                 const count_se = new Audio('./media/audio/count.mp3');
                 const day_se = new Audio('./media/audio/kotoha/day/' + day_str + '.wav');
                 const horse_se = new Audio('./media/audio/kotoha/horse/' + horse_str + '.wav');
-                
+                const minutes_se = new Audio('./media/audio/kotoha/minutes/' + minutes_str + '.wav');
+
                 count_se.volume = get_volume/100;
                 day_se.volume = get_volume/100;
                 horse_se.volume = get_volume/100;
+                minutes_se.volume = get_volume/100;
 
                 count_se.play();
                 count_se.addEventListener('ended', function() {
@@ -84,7 +87,10 @@
                     day_se.addEventListener('ended', function() {
                         horse_se.play();
                         horse_se.addEventListener('ended', function() {
-                            console.log("司法試験まで" + day_str + "日と" + horse_str + "時間です");
+                            minutes_se.play();
+                            minutes_se.addEventListener('ended', function() {
+                                console.log("司法試験まで" + day_str + "日と" + horse_str + "時間" + minutes_str + "分です");
+                            });
                         });
                     });
                 });
