@@ -1,5 +1,5 @@
 ﻿$(function(){
-
+    
     var set_year = 2022;
     var set_mon = 5;
     var set_day = 11;
@@ -58,7 +58,7 @@
             //$("#horse_h1").text(('000' + diffHour).slice(-3)+ ":");
             $("#horse_h1").text(chas_str_time);
 
-            if(Math.floor(diffSecond.toString()) == 3 && Math.floor(diffSecond.toString()) == 3){
+            if(Math.floor(diffSecond.toString()) == 2){
                 count_flag = true
             }else{
                 count_flag = false
