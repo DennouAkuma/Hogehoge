@@ -6,6 +6,10 @@
     <link type="text/css" rel="stylesheet" href="./css/comment_style.css">
     <link type="text/css" rel="stylesheet" href="./css/trop_bar_style.css">
     <link type="text/css" rel="stylesheet" href="./css/all_time_style.css">
+    <?php
+        include "./temp/root.php";
+        include "./temp/db_send.php";        
+    ?>
 </head>
 <body>
     <header>

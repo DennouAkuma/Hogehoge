@@ -1,7 +1,4 @@
 ﻿<?php
-    include "./temp/root.php";
-    include "./temp/db_send.php";
-
 	$s_up_time = array();
 	$s_st_time = array();
 	$s_en_time = array();
