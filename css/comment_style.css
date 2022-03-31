@@ -12,7 +12,7 @@
 .volume_str{
     position: absolute;
     left: 30px;
-    top: 10px;
+    bottom: 90px;
     margin: 0;
 }
 
@@ -29,7 +29,7 @@
     -webkit-appearance: none;
     position: absolute;
     left: 30px;
-    top: 40px;
+    bottom: 40px;
     overflow: hidden;
     height: 40px;
     width: 200px;
@@ -97,4 +97,8 @@
 
 ::-ms-tooltip { 
     display: none;
+}
+
+footer{
+    height: 50px;
 }

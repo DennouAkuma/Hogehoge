@@ -1,0 +1,31 @@
+.all_time_div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #760d4c;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #1e141d;
+    color: #fff;
+    font-size: 30px;
+}
+
+.total_time_int_A{
+    color: #f2d12f;
+    font-size: 40px;
+}
+
+.coution_class{
+    background-color: #be155e;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.total_time_A{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+

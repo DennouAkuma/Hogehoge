@@ -5,6 +5,7 @@
     <link type="text/css" rel="stylesheet" href="./css/mian_style.css">
     <link type="text/css" rel="stylesheet" href="./css/comment_style.css">
     <link type="text/css" rel="stylesheet" href="./css/trop_bar_style.css">
+    <link type="text/css" rel="stylesheet" href="./css/all_time_style.css">
 </head>
 <body>
     <header>
@@ -38,18 +39,25 @@
             <h1 class="time_style" id="horse_h1"></h1>
         </div>
 
+        <p class="var_str">var 0.0.9 ※PCのみ対応</p>
+
         <p class="volume_str">Volume</p>
         <input id="volume_ra" type="range" name="example" min="0" max="100" step="1" value="0">
-        <p class="var_str">var 0.0.9 ※PCのみ対応</p>
         <!--
         <div class="comment_class">
             <p>hogehoge</p>
             <p>hogehoge</p>
         </div>
     -->
+
+        <div class="all_time_div">
+            <?php
+                include "./temp/get_data.php"
+            ?>
+        </div>
     </main>
     <footer>
-
+        <h1></h1>
     </footer>
     <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./js/main_script.js"></script>
